@@ -45,7 +45,7 @@ const App = () => {
   const handleAddTodo = (e) => {
     e.preventDefault();
 
-    const title = e.target.title.value;
+    const title = e.target.title.value.trim();
     if (title === "") return;
 
     const newTodo = {
